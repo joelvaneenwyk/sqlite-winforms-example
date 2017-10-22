@@ -12,9 +12,13 @@ namespace sqlite_winforms_example
 {
     public partial class Form1 : Form
     {
+        private SqLiteDatabase _database;
+
         public Form1()
         {
             InitializeComponent();
+
+            this._database = new SqLiteDatabase();
         }
     }
 }
